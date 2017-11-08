@@ -16,6 +16,8 @@ repositories {
     jcenter()
 }
 
+task stage(dependsOn: ['build', 'clean'])
+
 dependencies {
     
      compile 'com.sparkjava:spark-core:2.3'
